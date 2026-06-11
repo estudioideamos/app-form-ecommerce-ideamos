@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brief Ecommerce | Ideamos</title>
+    <meta
+      name="description"
+      content="Complet&aacute; el brief ecommerce de Ideamos para compartir la informaci&oacute;n, materiales y definiciones necesarias para dise&ntilde;ar y desarrollar tu tienda online."
+    />
+    <link rel="icon" type="image/png" href="./assets/ideamos-favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/ideamos-favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-glow page-glow--left" aria-hidden="true"></div>
+    <div class="page-glow page-glow--right" aria-hidden="true"></div>
+
+    <div class="site-shell">
+      <aside class="info-panel">
+        <div class="brand-wrap">
+          <a class="brand" href="https://ideamos.com.ar/" target="_blank" rel="noreferrer">
+            <img class="brand-logo" src="./assets/ideamos-logo-hero.png" alt="Ideamos" />
+            <span class="brand-sub">Ecommerce Intake</span>
+          </a>
+        </div>
+
+        <div class="panel-copy">
+          <p class="eyebrow">Tiendas online con foco en conversi&oacute;n</p>
+          <h1>Compartinos tu material y armamos una tienda online lista para salir.</h1>
+          <p class="lead">
+            Este brief nos permite reunir marca, cat&aacute;logo, contenidos, im&aacute;genes y
+            definiciones t&eacute;cnicas para avanzar con dise&ntilde;o y desarrollo con una base clara.
+          </p>
+        </div>
+
+        <div class="panel-card panel-card--highlight">
+          <span class="card-kicker">Qu&eacute; resolvemos con esta informaci&oacute;n</span>
+          <ul class="feature-list">
+            <li>Estructura del sitio y jerarqu&iacute;a de categor&iacute;as</li>
+            <li>Direcci&oacute;n visual y experiencia de compra alineada a la marca</li>
+            <li>Definici&oacute;n de contenidos, medios de pago, env&iacute;os e integraciones</li>
+            <li>Un punto de partida s&oacute;lido para dise&ntilde;o, carga y puesta online</li>
+          </ul>
+        </div>
+
+        <dl class="panel-metrics">
+          <div>
+            <dt>Tiempo estimado</dt>
+            <dd>8 a 10 minutos</dd>
+          </div>
+          <div>
+            <dt>Entrega</dt>
+            <dd>Se env&iacute;a a hola@ideamos.com.ar</dd>
+          </div>
+          <div>
+            <dt>Guardado</dt>
+            <dd>Tu avance queda guardado en este dispositivo</dd>
+          </div>
+        </dl>
+      </aside>
+
+      <main class="form-panel">
+        <header class="form-header">
+          <div>
+            <p class="eyebrow">Brief de onboarding</p>
+            <h2>Informaci&oacute;n para dise&ntilde;o y desarrollo ecommerce</h2>
+            <p class="section-lead">
+              Organizamos en pasos todo lo que normalmente necesitamos para construir una tienda
+              online bien resuelta, sin pedirte accesos sensibles en esta instancia.
+            </p>
+          </div>
+
+          <div class="progress-shell" aria-live="polite">
+            <div class="progress-meta">
+              <span id="progress-label">Paso 1 de 8</span>
+              <span id="progress-title">Contacto</span>
+            </div>
+            <div class="progress-track" aria-hidden="true">
+              <div id="progress-bar" class="progress-bar"></div>
+            </div>
+          </div>
+        </header>
+
+        <form id="campaign-form" novalidate>
+          <input type="hidden" name="_honey" tabindex="-1" autocomplete="off" />
+
+          <section class="step is-active" data-step="contacto" data-title="Contacto">
+            <div class="step-copy">
+              <span class="step-index">01</span>
+              <div>
+                <h3>Empresa, contacto y contexto general</h3>
+                <p>Arrancamos con una base clara del negocio y de la persona con la que vamos a trabajar.</p>
+              </div>
+            </div>
+
+            <div class="field-grid">
+              <label class="field">
+                <span>Nombre de la empresa o marca *</span>
+                <input type="text" name="company_name" autocomplete="organization" />
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Sitio web actual, landing o canal principal</span>
+                <input type="url" name="website" placeholder="ideamos.com.ar" inputmode="url" />
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Nombre y apellido del contacto responsable *</span>
+                <input type="text" name="contact_name" autocomplete="name" />
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Email de contacto *</span>
+                <input type="email" name="contact_email" autocomplete="email" />
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Tel&eacute;fono o WhatsApp *</span>
+                <input type="tel" name="contact_phone" autocomplete="tel" />
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Links de redes o canales donde hoy venden</span>
+                <input
+                  type="text"
+                  name="social_links"
+                  placeholder="Instagram, WhatsApp, Mercado Libre, TikTok Shop, etc."
+                />
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field field--full">
+                <span>Descripci&oacute;n breve del negocio *</span>
+                <textarea
+                  name="business_overview"
+                  rows="4"
+                  placeholder="Contanos qu&eacute; venden, a qui&eacute;n, cu&aacute;l es su diferencial y cualquier contexto importante para dise&ntilde;ar la tienda"
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <fieldset class="field-group field--full">
+                <legend>&iquest;La tienda necesita aviso o restricci&oacute;n para mayores de 18 a&ntilde;os? *</legend>
+                <div class="radio-stack">
+                  <label class="choice"><input type="radio" name="age_restriction" value="Si" />S&iacute;</label>
+                  <label class="choice"><input type="radio" name="age_restriction" value="No" />No</label>
+                  <label class="choice"><input type="radio" name="age_restriction" value="No aplica" />No aplica</label>
+                </div>
+                <small class="field-error"></small>
+              </fieldset>
+            </div>
+          </section>
+
+          <section class="step" data-step="marca" data-title="Marca">
+            <div class="step-copy">
+              <span class="step-index">02</span>
+              <div>
+                <h3>Identidad de marca</h3>
+                <p>Definimos qu&eacute; material de marca ya existe y cu&aacute;les son las preferencias visuales para el sitio.</p>
+              </div>
+            </div>
+
+            <div class="field-grid">
+              <fieldset class="field-group">
+                <legend>&iquest;La identidad visual ya est&aacute; resuelta? *</legend>
+                <div class="radio-stack">
+                  <label class="choice"><input type="radio" name="brand_status" value="Si, esta consolidada" />S&iacute;, est&aacute; consolidada</label>
+                  <label class="choice"><input type="radio" name="brand_status" value="Parcial, hay que ajustarla" />Parcial, hay que ajustarla</label>
+                  <label class="choice"><input type="radio" name="brand_status" value="No, hay que desarrollarla" />No, hay que desarrollarla</label>
+                </div>
+                <small class="field-error"></small>
+              </fieldset>
+
+              <label class="field">
+                <span>Logo, archivos y assets de marca disponibles *</span>
+                <textarea
+                  name="logo_assets"
+                  rows="4"
+                  placeholder="Logo en PNG o SVG, versiones disponibles, fondo transparente, manual, piezas, etc."
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Paleta de colores o preferencias visuales</span>
+                <textarea
+                  name="color_preferences"
+                  rows="4"
+                  placeholder="C&oacute;digos HEX o RGB si los tienen, o una orientaci&oacute;n general de color"
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Tipograf&iacute;as y lineamientos de marca</span>
+                <textarea
+                  name="brand_typography"
+                  rows="4"
+                  placeholder="Tipograf&iacute;as, usos recomendados, restricciones o aclaraciones"
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <fieldset class="field-group">
+                <legend>&iquest;Tienen manual de marca?</legend>
+                <div class="radio-stack">
+                  <label class="choice"><input type="radio" name="brand_manual" value="Si" />S&iacute;</label>
+                  <label class="choice"><input type="radio" name="brand_manual" value="No" />No</label>
+                  <label class="choice"><input type="radio" name="brand_manual" value="Parcial" />Parcial</label>
+                </div>
+                <small class="field-error"></small>
+              </fieldset>
+
+              <label class="field">
+                <span>Slogan o frase distintiva</span>
+                <input type="text" name="brand_slogan" placeholder="Si ya cuentan con una" />
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field field--full">
+                <span>Estilo visual deseado para la tienda *</span>
+                <textarea
+                  name="visual_style"
+                  rows="4"
+                  placeholder="Moderno, minimalista, elegante, oscuro, editorial, t&eacute;cnico, c&aacute;lido, etc."
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+            </div>
+          </section>
+
+          <section class="step" data-step="referencias" data-title="Referencias">
+            <div class="step-copy">
+              <span class="step-index">03</span>
+              <div>
+                <h3>Referencias y competencia</h3>
+                <p>Nos sirve ver ejemplos concretos para interpretar mejor la est&eacute;tica y la experiencia que esperan.</p>
+              </div>
+            </div>
+
+            <div class="field-grid">
+              <label class="field field--full">
+                <span>Webs de referencia o competidores que les gusten *</span>
+                <textarea
+                  name="reference_sites"
+                  rows="5"
+                  placeholder="Compartinos 2 o 3 links. No hace falta que sean del mismo rubro si la referencia visual es &uacute;til."
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field field--full">
+                <span>&iquest;Qu&eacute; les gusta de cada referencia? *</span>
+                <textarea
+                  name="reference_feedback"
+                  rows="5"
+                  placeholder="Colores, estructura, fotos, tipograf&iacute;a, navegaci&oacute;n, banners, tono visual, etc."
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+            </div>
+          </section>
+
+          <section class="step" data-step="catalogo" data-title="Catalogo">
+            <div class="step-copy">
+              <span class="step-index">04</span>
+              <div>
+                <h3>Cat&aacute;logo de productos</h3>
+                <p>Ac&aacute; relevamos el volumen, la estructura y el material disponible para cargar el ecommerce con criterio.</p>
+              </div>
+            </div>
+
+            <div class="field-grid">
+              <label class="field field--full">
+                <span>Categor&iacute;as principales del sitio *</span>
+                <textarea
+                  name="main_categories"
+                  rows="4"
+                  placeholder="Especificanos todas las categor&iacute;as que va a tener la tienda"
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Cantidad estimada de productos o SKU *</span>
+                <input type="text" name="sku_count" placeholder="Ej: 60 productos / 180 SKU" />
+                <small class="field-error"></small>
+              </label>
+
+              <fieldset class="field-group">
+                <legend>&iquest;Ya tienen el cat&aacute;logo preparado en Excel o Google Sheets? *</legend>
+                <div class="radio-stack">
+                  <label class="choice"><input type="radio" name="catalog_format" value="Si, completo" />S&iacute;, completo</label>
+                  <label class="choice"><input type="radio" name="catalog_format" value="Parcial" />Parcial</label>
+                  <label class="choice"><input type="radio" name="catalog_format" value="No" />No</label>
+                </div>
+                <small class="field-error"></small>
+              </fieldset>
+
+              <label class="field field--full">
+                <span>Informaci&oacute;n disponible por producto *</span>
+                <textarea
+                  name="catalog_scope"
+                  rows="5"
+                  placeholder="Indic&aacute; si cuentan con nombre, descripci&oacute;n corta, descripci&oacute;n larga, precio, categor&iacute;a, variantes, stock, medidas o cualquier otro dato relevante"
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Productos, l&iacute;neas o promociones prioritarias</span>
+                <textarea
+                  name="priority_products"
+                  rows="4"
+                  placeholder="Qu&eacute; quieren destacar desde el inicio o qu&eacute; productos empujan m&aacute;s hoy"
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Fotos de producto disponibles *</span>
+                <textarea
+                  name="product_photos"
+                  rows="4"
+                  placeholder="Indic&aacute; si tienen fondo blanco o transparente, buena calidad, varias vistas, variantes, etc."
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+            </div>
+          </section>
+
+          <section class="step" data-step="imagenes" data-title="Imagenes">
+            <div class="step-copy">
+              <span class="step-index">05</span>
+              <div>
+                <h3>Im&aacute;genes generales y recursos visuales</h3>
+                <p>Queremos saber con qu&eacute; material visual propio cuentan para enriquecer la tienda y las p&aacute;ginas internas.</p>
+              </div>
+            </div>
+
+            <div class="field-grid">
+              <label class="field field--full">
+                <span>Im&aacute;genes generales disponibles *</span>
+                <textarea
+                  name="general_images"
+                  rows="5"
+                  placeholder="Fotos del local o showroom, equipo, proceso de trabajo, lifestyle, iconos, gr&aacute;ficos propios, etc."
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Banners o piezas para promociones</span>
+                <textarea
+                  name="banner_assets"
+                  rows="4"
+                  placeholder="Promos activas, descuentos, fechas comerciales, piezas listas o ideas a comunicar"
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <fieldset class="field-group">
+                <legend>Si faltan im&aacute;genes propias, &iquest;est&aacute; bien complementar con banco de im&aacute;genes? *</legend>
+                <div class="radio-stack">
+                  <label class="choice"><input type="radio" name="stock_image_support" value="Si" />S&iacute;</label>
+                  <label class="choice"><input type="radio" name="stock_image_support" value="No" />No</label>
+                  <label class="choice"><input type="radio" name="stock_image_support" value="A definir" />A definir</label>
+                </div>
+                <small class="field-error"></small>
+              </fieldset>
+            </div>
+          </section>
+
+          <section class="step" data-step="contenidos" data-title="Contenidos">
+            <div class="step-copy">
+              <span class="step-index">06</span>
+              <div>
+                <h3>Contenidos del sitio</h3>
+                <p>Relevamos los textos e informaci&oacute;n que ya tienen para Home, Nosotros, FAQ, Contacto y pol&iacute;ticas.</p>
+              </div>
+            </div>
+
+            <div class="field-grid">
+              <label class="field">
+                <span>Contenido disponible para Home *</span>
+                <textarea
+                  name="homepage_content"
+                  rows="5"
+                  placeholder="Texto de bienvenida, slogan, diferenciales, productos o promos destacadas y llamados a la acci&oacute;n"
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Contenido disponible para Nosotros</span>
+                <textarea
+                  name="about_content"
+                  rows="5"
+                  placeholder="Historia de la marca, filosof&iacute;a, misi&oacute;n, valores, fotos del local o del equipo, etc."
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Preguntas frecuentes y temas clave *</span>
+                <textarea
+                  name="faq_topics"
+                  rows="5"
+                  placeholder="Env&iacute;os, cambios y devoluciones, medios de pago, garant&iacute;as, restricciones, cuidados, etc."
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Datos de contacto que deben figurar en el sitio *</span>
+                <textarea
+                  name="contact_content"
+                  rows="5"
+                  placeholder="Tel&eacute;fono, WhatsApp, email, direcci&oacute;n, horarios, redes sociales, mapa o ubicaci&oacute;n"
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Pol&iacute;ticas y textos legales disponibles</span>
+                <textarea
+                  name="policy_content"
+                  rows="5"
+                  placeholder="Privacidad, t&eacute;rminos y condiciones, env&iacute;os, devoluciones o cualquier texto ya redactado"
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <fieldset class="field-group">
+                <legend>&iquest;Necesitan apoyo de Ideamos con textos y armado de contenidos? *</legend>
+                <div class="radio-stack">
+                  <label class="choice"><input type="radio" name="copy_support" value="Si, integral" />S&iacute;, integral</label>
+                  <label class="choice"><input type="radio" name="copy_support" value="Parcial" />Parcial</label>
+                  <label class="choice"><input type="radio" name="copy_support" value="No, lo aporta el cliente" />No, lo aporta el cliente</label>
+                </div>
+                <small class="field-error"></small>
+              </fieldset>
+            </div>
+          </section>
+
+          <section class="step" data-step="configuracion" data-title="Configuracion">
+            <div class="step-copy">
+              <span class="step-index">07</span>
+              <div>
+                <h3>Configuraci&oacute;n de la tienda</h3>
+                <p>Ac&aacute; entendemos pagos, env&iacute;os, integraciones y cualquier definici&oacute;n funcional importante para el desarrollo.</p>
+              </div>
+            </div>
+
+            <div class="field-grid">
+              <fieldset class="field-group">
+                <legend>&iquest;Ya tienen una plataforma o tienda activa?</legend>
+                <div class="radio-stack">
+                  <label class="choice"><input type="radio" name="current_platform" value="No" />No</label>
+                  <label class="choice"><input type="radio" name="current_platform" value="Tiendanube" />Tiendanube</label>
+                  <label class="choice"><input type="radio" name="current_platform" value="Shopify" />Shopify</label>
+                  <label class="choice"><input type="radio" name="current_platform" value="WooCommerce" />WooCommerce</label>
+                  <label class="choice"><input type="radio" name="current_platform" value="Otra plataforma" />Otra plataforma</label>
+                </div>
+                <small class="field-error"></small>
+              </fieldset>
+
+              <label class="field">
+                <span>Medios de pago a implementar *</span>
+                <textarea
+                  name="payment_methods"
+                  rows="4"
+                  placeholder="Mercado Pago, transferencia, cuotas, links de pago, efectivo en local u otros"
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Si quieren habilitar transferencia bancaria, detall&aacute; los datos necesarios</span>
+                <textarea
+                  name="bank_transfer_setup"
+                  rows="5"
+                  placeholder="Banco, titular, n&uacute;mero de cuenta, CBU, alias, tipo de cuenta y moneda. Si todav&iacute;a no lo tienen definido, aclaralo."
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>M&eacute;todos de env&iacute;o o entrega previstos *</span>
+                <textarea
+                  name="shipping_methods"
+                  rows="4"
+                  placeholder="Correo, moto, retiro en local, env&iacute;o propio, fullfilment, zonas cubiertas, etc."
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Integraciones necesarias *</span>
+                <textarea
+                  name="required_integrations"
+                  rows="4"
+                  placeholder="Facturaci&oacute;n, ERP, CRM, email marketing, analytics, Meta, pixel, marketplaces, etc."
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field field--full">
+                <span>Funcionalidades o aclaraciones especiales</span>
+                <textarea
+                  name="special_features"
+                  rows="4"
+                  placeholder="Mayorista, filtros avanzados, bundles, promociones, feed de Instagram, suscripci&oacute;n, validaciones o cualquier necesidad particular"
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+            </div>
+          </section>
+
+          <section class="step" data-step="tecnico" data-title="Tecnico">
+            <div class="step-copy">
+              <span class="step-index">08</span>
+              <div>
+                <h3>Datos t&eacute;cnicos, marketing y accesos</h3>
+                <p>Cerramos con dominio, hosting, activos existentes y cualquier dato t&eacute;cnico que ayude a planificar la salida online.</p>
+              </div>
+            </div>
+
+            <div class="field-grid">
+              <label class="field">
+                <span>Fecha ideal de lanzamiento o prioridad del proyecto *</span>
+                <input
+                  type="text"
+                  name="launch_timing"
+                  placeholder="Ej: cuanto antes, antes del Hot Sale, en septiembre, etc."
+                />
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Dominio, hosting y activos t&eacute;cnicos disponibles *</span>
+                <textarea
+                  name="domains_assets"
+                  rows="4"
+                  placeholder="Dominio, hosting, servidor, emails, accesos delegables, cuentas de medici&oacute;n o cualquier activo ya disponible"
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Estado del hosting o servidor</span>
+                <input
+                  type="text"
+                  name="hosting_status"
+                  placeholder="Indicanos si ya est&aacute; contratado o si todav&iacute;a hay que definirlo"
+                />
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Material de comunicaci&oacute;n y marketing disponible</span>
+                <textarea
+                  name="marketing_assets"
+                  rows="4"
+                  placeholder="Links de redes, frases para banners, promociones, testimonios, piezas activas o campañas en curso"
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Email administrador para futuros accesos</span>
+                <input type="email" name="admin_email" autocomplete="email" />
+                <small class="field-error"></small>
+              </label>
+
+              <label class="field">
+                <span>Si quieren vincular Instagram, compartinos el usuario y el contexto</span>
+                <textarea
+                  name="instagram_connection"
+                  rows="4"
+                  placeholder="Usuario, email administrador o aclaraciones. El acceso se coordina luego por una v&iacute;a segura."
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <div class="access-note field--full" role="note" aria-label="Acceso seguro a activos digitales">
+                <span class="access-note__eyebrow">Acceso seguro</span>
+                <h4>No compartas contrase&ntilde;as ni c&oacute;digos en este formulario</h4>
+                <p>
+                  Si m&aacute;s adelante hace falta conectar Mercado Pago, Instagram u otras
+                  plataformas, lo coordinamos por invitaci&oacute;n o por una instancia guiada y segura.
+                </p>
+              </div>
+
+              <label class="field field--full">
+                <span>Comentarios finales o informaci&oacute;n adicional</span>
+                <textarea
+                  name="final_notes"
+                  rows="4"
+                  placeholder="Todo lo que consideres importante para ayudarnos a dise&ntilde;ar y desarrollar la tienda con mejor criterio"
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+            </div>
+          </section>
+
+          <section class="step" data-step="revision" data-title="Revision">
+            <div class="step-copy">
+              <span class="step-index">Final</span>
+              <div>
+                <h3>Revisi&oacute;n final y env&iacute;o</h3>
+                <p>Repas&aacute; el resumen. Cuando lo env&iacute;es, vamos a recibir todo en <strong>hola@ideamos.com.ar</strong>.</p>
+              </div>
+            </div>
+
+            <div class="review-shell">
+              <div id="review-summary" class="review-summary"></div>
+
+              <div class="submit-card">
+                <p>
+                  Este brief nos ayuda a organizar materiales, contenidos y definiciones clave para
+                  avanzar con dise&ntilde;o, carga y desarrollo de la tienda online.
+                </p>
+                <button id="submit-button" class="button button--primary button--full" type="submit">
+                  Enviar brief a Ideamos
+                </button>
+                <p id="submit-feedback" class="submit-feedback" role="status" aria-live="polite"></p>
+              </div>
+            </div>
+          </section>
+
+          <footer class="form-footer">
+            <button id="prev-button" class="button button--ghost" type="button">
+              Anterior
+            </button>
+
+            <div class="footer-note">
+              <span>La informaci&oacute;n se guarda autom&aacute;ticamente mientras avanz&aacute;s.</span>
+            </div>
+
+            <button id="next-button" class="button button--primary" type="button">
+              Siguiente
+            </button>
+          </footer>
+        </form>
+
+        <section id="success-state" class="success-state" hidden>
+          <p class="eyebrow">Brief enviado</p>
+          <h3>Gracias por completar la informaci&oacute;n.</h3>
+          <p>
+            Recibimos tu brief para la tienda online. El equipo de Ideamos va a usarlo para
+            ordenar materiales, alcance y pr&oacute;ximos pasos, y se va a contactar si hace falta alg&uacute;n dato extra.
+          </p>
+          <button id="restart-button" class="button button--ghost" type="button">
+            Cargar un nuevo brief
+          </button>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
