@@ -49,7 +49,7 @@ const summarySections = [
   {
     title: "Catalogo",
     items: [
-      ["Categorias principales", "main_categories"],
+      ["Categorias y subcategorias", "main_categories"],
       ["Drive de catalogo", "catalog_drive_link"],
       ["Aclaraciones de catalogo", "catalog_scope"],
       ["Productos prioritarios", "priority_products"],
@@ -111,7 +111,7 @@ const validators = {
     ["reference_feedback", "Contanos que les gusta de esas referencias."],
   ],
   catalogo: [
-    ["main_categories", "Especificanos las categorias principales del sitio."],
+    ["main_categories", "Especificanos las categorias y subcategorias del sitio."],
     ["catalog_drive_link", "Compartinos el link al archivo o carpeta del catalogo en Drive."],
   ],
   imagenes: [
