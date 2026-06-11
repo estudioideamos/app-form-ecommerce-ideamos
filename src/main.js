@@ -36,14 +36,8 @@ const summarySections = [
   {
     title: "Marca",
     items: [
-      ["Estado de la identidad", "brand_status"],
-      ["Logo y assets", "logo_assets"],
-      ["Paleta o preferencias", "color_preferences"],
-      ["Tipografias", "brand_typography"],
       ["Drive de marca", "brand_drive_link"],
-      ["Manual de marca", "brand_manual"],
-      ["Slogan", "brand_slogan"],
-      ["Estilo visual", "visual_style"],
+      ["Aclaraciones de marca", "brand_notes"],
     ],
   },
   {
@@ -114,9 +108,6 @@ const validators = {
     ["age_restriction", "Indicanos si la tienda necesita restriccion +18."],
   ],
   marca: [
-    ["brand_status", "Contanos en que estado esta la identidad visual."],
-    ["logo_assets", "Indicanos que logo o assets de marca tienen disponibles."],
-    ["visual_style", "Defini el estilo visual deseado para la tienda."],
   ],
   referencias: [
     ["reference_sites", "Compartinos algunas webs de referencia."],

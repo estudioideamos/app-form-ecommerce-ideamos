@@ -191,84 +191,39 @@
               <span class="step-index">02</span>
               <div>
                 <h3>Identidad de marca</h3>
-                <p>Definimos qu&eacute; material de marca ya existe, qu&eacute; falta y cu&aacute;les son las preferencias visuales para el sitio.</p>
+                <p>Te guiamos para que subas al Drive los archivos de marca que necesitamos para dise&ntilde;ar la tienda.</p>
               </div>
             </div>
 
             <div class="field-grid">
-              <fieldset class="field-group">
-                <legend>&iquest;La identidad visual ya est&aacute; resuelta? *</legend>
-                <div class="radio-stack">
-                  <label class="choice"><input type="radio" name="brand_status" value="Si, esta consolidada" />S&iacute;, est&aacute; consolidada</label>
-                  <label class="choice"><input type="radio" name="brand_status" value="Parcial, hay que ajustarla" />Parcial, hay que ajustarla</label>
-                  <label class="choice"><input type="radio" name="brand_status" value="No, hay que desarrollarla" />No, hay que desarrollarla</label>
-                </div>
-                <small class="field-error"></small>
-              </fieldset>
-
-              <label class="field">
-                <span>Logo, archivos y assets de marca disponibles *</span>
-                <textarea
-                  name="logo_assets"
-                  rows="4"
-                  placeholder="Logo en PNG o SVG, versiones disponibles, fondo transparente, manual, piezas, etc."
-                ></textarea>
-                <small class="field-error"></small>
-              </label>
-
-              <label class="field">
-                <span>Paleta de colores o preferencias visuales</span>
-                <textarea
-                  name="color_preferences"
-                  rows="4"
-                  placeholder="C&oacute;digos HEX o RGB si los tienen, o una orientaci&oacute;n general de color"
-                ></textarea>
-                <small class="field-error"></small>
-              </label>
-
-              <label class="field">
-                <span>Tipograf&iacute;as y lineamientos de marca</span>
-                <textarea
-                  name="brand_typography"
-                  rows="4"
-                  placeholder="Tipograf&iacute;as, usos recomendados, restricciones o aclaraciones"
-                ></textarea>
-                <small class="field-error"></small>
-              </label>
+              <div class="access-note field--full" role="note" aria-label="Guia para identidad de marca">
+                <span class="access-note__eyebrow">Qu&eacute; subir en Marca</span>
+                <h4>Archivos recomendados para dise&ntilde;ar con coherencia</h4>
+                <p>
+                  Sub&iacute; el logo en PNG o SVG, idealmente con fondo transparente. Si ya tienen
+                  paleta de colores, tipograf&iacute;as, manual de marca, slogan, piezas gr&aacute;ficas
+                  o referencias de estilo, agregalas en esta carpeta. Si no tienen alguno de estos
+                  elementos, no hace falta inventarlo: lo resolvemos durante el dise&ntilde;o.
+                </p>
+              </div>
 
               <label class="field field--full">
-                <span>Link a carpeta de marca en Drive</span>
+                <span>Link a carpeta de identidad de marca en Drive</span>
                 <input
                   type="url"
                   name="brand_drive_link"
-                  placeholder="Si el material de marca ya est&aacute; ordenado aparte, peg&aacute; el link ac&aacute;"
+                  placeholder="Si est&aacute; dentro de la carpeta principal, pod&eacute;s dejar este campo vac&iacute;o"
                   inputmode="url"
                 />
                 <small class="field-error"></small>
               </label>
 
-              <fieldset class="field-group">
-                <legend>&iquest;Tienen manual de marca?</legend>
-                <div class="radio-stack">
-                  <label class="choice"><input type="radio" name="brand_manual" value="Si" />S&iacute;</label>
-                  <label class="choice"><input type="radio" name="brand_manual" value="No" />No</label>
-                  <label class="choice"><input type="radio" name="brand_manual" value="Parcial" />Parcial</label>
-                </div>
-                <small class="field-error"></small>
-              </fieldset>
-
-              <label class="field">
-                <span>Slogan o frase distintiva</span>
-                <input type="text" name="brand_slogan" placeholder="Si ya cuentan con una" />
-                <small class="field-error"></small>
-              </label>
-
               <label class="field field--full">
-                <span>Estilo visual deseado para la tienda *</span>
+                <span>Aclaraciones sobre identidad de marca</span>
                 <textarea
-                  name="visual_style"
+                  name="brand_notes"
                   rows="4"
-                  placeholder="Moderno, minimalista, elegante, oscuro, editorial, t&eacute;cnico, c&aacute;lido, etc."
+                  placeholder="Us&aacute; este espacio solo si quer&eacute;s aclarar colores preferidos, estilo visual, slogan, tipograf&iacute;as o algo importante sobre la marca"
                 ></textarea>
                 <small class="field-error"></small>
               </label>
@@ -329,7 +284,7 @@
 
               <label class="field">
                 <span>Cantidad aproximada de productos a cargar *</span>
-                <input type="text" name="sku_count" placeholder="Ej: 60 productos / 180 SKU" />
+                <input type="text" name="sku_count" placeholder="Ej: 40 productos / 120 variantes o SKU" />
                 <small class="field-error"></small>
               </label>
 
@@ -350,8 +305,9 @@
                 <p>
                   Necesitamos una fila por producto con esta informaci&oacute;n m&iacute;nima:
                   nombre del producto, descripci&oacute;n corta, descripci&oacute;n larga, precio y
-                  categor&iacute;a. Si adem&aacute;s tienen variantes, stock, medidas o materiales,
-                  mejor sumarlo en columnas separadas.
+                  categor&iacute;a. Es muy importante que indiquen todas las categor&iacute;as que va
+                  a tener el sitio. Si hay variantes, stock, medidas, materiales, colores o talles,
+                  sumen esa informaci&oacute;n en columnas separadas.
                 </p>
               </div>
 
@@ -379,9 +335,10 @@
                 <span class="access-note__eyebrow">C&oacute;mo subir las fotos de producto</span>
                 <h4>Prioriz&aacute; calidad y orden</h4>
                 <p>
-                  Suban las fotos en alta calidad, con buena iluminaci&oacute;n y, de ser posible,
-                  con fondo blanco o transparente. Si un producto tiene variantes, idealmente suban
-                  una carpeta por producto o una nomenclatura clara para identificar color, talle o versi&oacute;n.
+                  Suban im&aacute;genes JPG, PNG o WebP en buena calidad, idealmente cuadradas y de
+                  al menos 1200 x 1200 px. Prioriz&aacute; fondo blanco o transparente, buena
+                  iluminaci&oacute;n y varias vistas cuando sea posible. Si un producto tiene variantes,
+                  usen una carpeta por producto o nombres claros para identificar color, talle o versi&oacute;n.
                 </p>
               </div>
 
@@ -424,7 +381,10 @@
                 <p>
                   Idealmente suban fotos del local o showroom, del equipo, del proceso de trabajo,
                   im&aacute;genes lifestyle, banners promocionales, iconos propios o cualquier recurso
-                  gr&aacute;fico que quieran que tengamos en cuenta. Si no cuentan con todo eso, suban igual lo que ya tengan.
+                  gr&aacute;fico que quieran que tengamos en cuenta. Para banners o im&aacute;genes
+                  horizontales, intenten subir archivos grandes, por ejemplo 1920 px de ancho o m&aacute;s.
+                  Para iconos o gr&aacute;ficos, PNG o SVG funciona mejor. Si no cuentan con todo eso,
+                  suban igual lo que ya tengan.
                 </p>
               </div>
 
