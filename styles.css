@@ -506,6 +506,11 @@ form {
   grid-column: 1 / -1;
 }
 
+.field-grid > .field--full,
+.field-grid > .access-note {
+  align-self: stretch;
+}
+
 .access-note {
   grid-column: 1 / -1;
   padding: 20px 22px;
