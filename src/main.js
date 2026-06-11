@@ -28,6 +28,7 @@ const summarySections = [
       ["Email", "contact_email"],
       ["WhatsApp", "contact_phone"],
       ["Redes o canales", "social_links"],
+      ["Drive principal", "shared_drive_link"],
       ["Resumen del negocio", "business_overview"],
       ["Restriccion +18", "age_restriction"],
     ],
@@ -39,6 +40,7 @@ const summarySections = [
       ["Logo y assets", "logo_assets"],
       ["Paleta o preferencias", "color_preferences"],
       ["Tipografias", "brand_typography"],
+      ["Drive de marca", "brand_drive_link"],
       ["Manual de marca", "brand_manual"],
       ["Slogan", "brand_slogan"],
       ["Estilo visual", "visual_style"],
@@ -57,6 +59,7 @@ const summarySections = [
       ["Categorias principales", "main_categories"],
       ["Cantidad estimada", "sku_count"],
       ["Catalogo en planilla", "catalog_format"],
+      ["Drive de catalogo", "catalog_drive_link"],
       ["Informacion disponible por producto", "catalog_scope"],
       ["Productos prioritarios", "priority_products"],
       ["Fotos de producto", "product_photos"],
@@ -66,6 +69,7 @@ const summarySections = [
     title: "Imagenes",
     items: [
       ["Imagenes generales", "general_images"],
+      ["Drive de imagenes", "images_drive_link"],
       ["Banners o promos", "banner_assets"],
       ["Uso de stock", "stock_image_support"],
     ],
@@ -78,6 +82,7 @@ const summarySections = [
       ["FAQ y temas clave", "faq_topics"],
       ["Datos de contacto", "contact_content"],
       ["Politicas y legales", "policy_content"],
+      ["Drive de contenidos", "content_drive_link"],
       ["Soporte de copy", "copy_support"],
     ],
   },
@@ -93,9 +98,9 @@ const summarySections = [
     ],
   },
   {
-    title: "Tecnico y marketing",
+    title: "Cierre, tecnico y marketing",
     items: [
-      ["Fecha ideal", "launch_timing"],
+      ["Fecha objetivo", "launch_timing"],
       ["Dominio, hosting y activos", "domains_assets"],
       ["Estado del hosting", "hosting_status"],
       ["Material de marketing", "marketing_assets"],
@@ -112,6 +117,7 @@ const validators = {
     ["contact_name", "Indicanos el contacto responsable."],
     ["contact_email", "Necesitamos un email de contacto valido."],
     ["contact_phone", "Compartinos un telefono o WhatsApp."],
+    ["shared_drive_link", "Compartinos el link principal a la carpeta de Google Drive."],
     ["business_overview", "Contanos brevemente de que trata el negocio."],
     ["age_restriction", "Indicanos si la tienda necesita restriccion +18."],
   ],
@@ -281,7 +287,7 @@ function validateStep(step) {
       isValid = false;
     }
 
-    if (name === "website" && value !== "" && !isValidUrl(String(value))) {
+    if ((name === "website" || name.endsWith("_link")) && value !== "" && !isValidUrl(String(value))) {
       markError(name, "Ingresa una web valida. Puede ser con o sin http:// o https://.");
       isValid = false;
     }
