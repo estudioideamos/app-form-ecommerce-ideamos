@@ -328,38 +328,39 @@
               </label>
 
               <label class="field">
-                <span>Cantidad estimada de productos o SKU *</span>
+                <span>Cantidad aproximada de productos a cargar *</span>
                 <input type="text" name="sku_count" placeholder="Ej: 60 productos / 180 SKU" />
                 <small class="field-error"></small>
               </label>
 
-              <fieldset class="field-group">
-                <legend>&iquest;Ya tienen el cat&aacute;logo preparado en Excel o Google Sheets? *</legend>
-                <div class="radio-stack">
-                  <label class="choice"><input type="radio" name="catalog_format" value="Si, completo" />S&iacute;, completo</label>
-                  <label class="choice"><input type="radio" name="catalog_format" value="Parcial" />Parcial</label>
-                  <label class="choice"><input type="radio" name="catalog_format" value="No" />No</label>
-                </div>
-                <small class="field-error"></small>
-              </fieldset>
-
               <label class="field field--full">
-                <span>Link al archivo o carpeta del cat&aacute;logo en Drive</span>
+                <span>Link al archivo o carpeta del cat&aacute;logo en Drive *</span>
                 <input
                   type="url"
                   name="catalog_drive_link"
-                  placeholder="Idealmente una planilla o carpeta con Excel/Sheets, fotos y material base del cat&aacute;logo"
+                  placeholder="Sub&iacute; el cat&aacute;logo en una planilla de Excel o Google Sheets y peg&aacute; ac&aacute; el link"
                   inputmode="url"
                 />
                 <small class="field-error"></small>
               </label>
 
+              <div class="access-note field--full" role="note" aria-label="Guia para catalogo">
+                <span class="access-note__eyebrow">C&oacute;mo subir el cat&aacute;logo</span>
+                <h4>Usen una planilla simple y completa</h4>
+                <p>
+                  Necesitamos una fila por producto con esta informaci&oacute;n m&iacute;nima:
+                  nombre del producto, descripci&oacute;n corta, descripci&oacute;n larga, precio y
+                  categor&iacute;a. Si adem&aacute;s tienen variantes, stock, medidas o materiales,
+                  mejor sumarlo en columnas separadas.
+                </p>
+              </div>
+
               <label class="field field--full">
-                <span>Informaci&oacute;n disponible por producto *</span>
+                <span>Aclaraciones sobre el cat&aacute;logo</span>
                 <textarea
                   name="catalog_scope"
                   rows="5"
-                  placeholder="Indic&aacute; si cuentan con nombre del producto, descripci&oacute;n corta, descripci&oacute;n larga, precio, categor&iacute;a, variantes, stock, medidas o cualquier otro dato relevante"
+                  placeholder="Us&aacute; este espacio solo si hay algo importante para aclarar sobre el cat&aacute;logo, la carga o la estructura"
                 ></textarea>
                 <small class="field-error"></small>
               </label>
@@ -374,12 +375,22 @@
                 <small class="field-error"></small>
               </label>
 
+              <div class="access-note field--full" role="note" aria-label="Guia para fotos de producto">
+                <span class="access-note__eyebrow">C&oacute;mo subir las fotos de producto</span>
+                <h4>Prioriz&aacute; calidad y orden</h4>
+                <p>
+                  Suban las fotos en alta calidad, con buena iluminaci&oacute;n y, de ser posible,
+                  con fondo blanco o transparente. Si un producto tiene variantes, idealmente suban
+                  una carpeta por producto o una nomenclatura clara para identificar color, talle o versi&oacute;n.
+                </p>
+              </div>
+
               <label class="field">
-                <span>Fotos de producto disponibles *</span>
+                <span>Link a carpeta de fotos de producto en Drive</span>
                 <textarea
                   name="product_photos"
                   rows="4"
-                  placeholder="Indic&aacute; si tienen fondo blanco o transparente, buena calidad, varias vistas, variantes o fotos por color/talle"
+                  placeholder="Si las fotos est&aacute;n en una carpeta separada del cat&aacute;logo, peg&aacute; ac&aacute; ese link. Si no, aclar&aacute; que est&aacute;n dentro de la misma carpeta principal."
                 ></textarea>
                 <small class="field-error"></small>
               </label>
@@ -391,51 +402,41 @@
               <span class="step-index">05</span>
               <div>
                 <h3>Im&aacute;genes generales y recursos visuales</h3>
-                <p>Queremos saber con qu&eacute; material visual propio cuentan para enriquecer la tienda y las p&aacute;ginas internas.</p>
+                <p>Ac&aacute; te guiamos sobre qu&eacute; im&aacute;genes conviene subir para enriquecer la tienda y las p&aacute;ginas internas.</p>
               </div>
             </div>
 
             <div class="field-grid">
               <label class="field field--full">
-                <span>Im&aacute;genes generales disponibles *</span>
-                <textarea
-                  name="general_images"
-                  rows="5"
-                  placeholder="Fotos del local o showroom, equipo, proceso de trabajo, lifestyle, iconos, gr&aacute;ficos propios, banners o cualquier recurso visual adicional"
-                ></textarea>
-                <small class="field-error"></small>
-              </label>
-
-              <label class="field field--full">
-                <span>Link a carpeta de im&aacute;genes generales en Drive</span>
+                <span>Link a carpeta de im&aacute;genes generales en Drive *</span>
                 <input
                   type="url"
                   name="images_drive_link"
-                  placeholder="Si ya tienen estas im&aacute;genes ordenadas, peg&aacute; el link ac&aacute;"
+                  placeholder="Sub&iacute; ac&aacute; fotos del local, showroom, equipo, proceso, lifestyle, banners o cualquier otro recurso visual"
                   inputmode="url"
                 />
                 <small class="field-error"></small>
               </label>
 
+              <div class="access-note field--full" role="note" aria-label="Guia para imagenes generales">
+                <span class="access-note__eyebrow">Qu&eacute; subir en esta carpeta</span>
+                <h4>Sum&aacute; todo lo que ayude a construir la identidad visual del sitio</h4>
+                <p>
+                  Idealmente suban fotos del local o showroom, del equipo, del proceso de trabajo,
+                  im&aacute;genes lifestyle, banners promocionales, iconos propios o cualquier recurso
+                  gr&aacute;fico que quieran que tengamos en cuenta. Si no cuentan con todo eso, suban igual lo que ya tengan.
+                </p>
+              </div>
+
               <label class="field">
-                <span>Banners o piezas para promociones</span>
+                <span>Aclaraciones sobre im&aacute;genes generales</span>
                 <textarea
                   name="banner_assets"
                   rows="4"
-                  placeholder="Promos activas, descuentos, fechas comerciales, piezas listas o ideas a comunicar"
+                  placeholder="Us&aacute; este espacio solo si hay algo importante para aclarar sobre banners, promos o recursos visuales"
                 ></textarea>
                 <small class="field-error"></small>
               </label>
-
-              <fieldset class="field-group">
-                <legend>Si faltan im&aacute;genes propias, &iquest;est&aacute; bien complementar con banco de im&aacute;genes? *</legend>
-                <div class="radio-stack">
-                  <label class="choice"><input type="radio" name="stock_image_support" value="Si" />S&iacute;</label>
-                  <label class="choice"><input type="radio" name="stock_image_support" value="No" />No</label>
-                  <label class="choice"><input type="radio" name="stock_image_support" value="A definir" />A definir</label>
-                </div>
-                <small class="field-error"></small>
-              </fieldset>
             </div>
           </section>
 
@@ -444,81 +445,41 @@
               <span class="step-index">06</span>
               <div>
                 <h3>Contenidos del sitio</h3>
-                <p>Relevamos los textos e informaci&oacute;n que ya tienen para Home, Nosotros, FAQ, Contacto y pol&iacute;ticas. Si no est&aacute; todo resuelto, env&iacute;ennos lo que ya exista.</p>
+                <p>Ac&aacute; te guiamos sobre qu&eacute; textos conviene subir. Si no est&aacute; todo resuelto, env&iacute;ennos lo que ya exista y despu&eacute;s completamos el resto.</p>
               </div>
             </div>
 
             <div class="field-grid">
-              <label class="field">
-                <span>Contenido disponible para Home *</span>
-                <textarea
-                  name="homepage_content"
-                  rows="5"
-                  placeholder="Texto de bienvenida, slogan, diferenciales, productos o promos destacadas y llamados a la acci&oacute;n"
-                ></textarea>
-                <small class="field-error"></small>
-              </label>
-
-              <label class="field">
-                <span>Contenido disponible para Nosotros</span>
-                <textarea
-                  name="about_content"
-                  rows="5"
-                  placeholder="Historia de la marca, filosof&iacute;a, misi&oacute;n, valores, fotos del local o del equipo, etc."
-                ></textarea>
-                <small class="field-error"></small>
-              </label>
-
-              <label class="field">
-                <span>Preguntas frecuentes y temas clave *</span>
-                <textarea
-                  name="faq_topics"
-                  rows="5"
-                  placeholder="Env&iacute;os, cambios y devoluciones, medios de pago, garant&iacute;as, restricciones, cuidados, etc."
-                ></textarea>
-                <small class="field-error"></small>
-              </label>
-
-              <label class="field">
-                <span>Datos de contacto que deben figurar en el sitio *</span>
-                <textarea
-                  name="contact_content"
-                  rows="5"
-                  placeholder="Tel&eacute;fono, WhatsApp, email, direcci&oacute;n, horarios, redes sociales, mapa o ubicaci&oacute;n"
-                ></textarea>
-                <small class="field-error"></small>
-              </label>
-
-              <label class="field">
-                <span>Pol&iacute;ticas y textos legales disponibles</span>
-                <textarea
-                  name="policy_content"
-                  rows="5"
-                  placeholder="Privacidad, t&eacute;rminos y condiciones, env&iacute;os, devoluciones o cualquier texto ya redactado"
-                ></textarea>
-                <small class="field-error"></small>
-              </label>
-
               <label class="field field--full">
-                <span>Link a carpeta o documento de contenidos en Drive</span>
+                <span>Link a carpeta o documento de contenidos en Drive *</span>
                 <input
                   type="url"
                   name="content_drive_link"
-                  placeholder="Puede ser una carpeta, un Google Doc o cualquier archivo donde est&eacute;n los textos"
+                  placeholder="Sub&iacute; ac&aacute; los textos o documentos con contenido para Home, Nosotros, FAQ, Contacto y pol&iacute;ticas"
                   inputmode="url"
                 />
                 <small class="field-error"></small>
               </label>
 
-              <fieldset class="field-group">
-                <legend>&iquest;Necesitan apoyo de Ideamos con textos y armado de contenidos? *</legend>
-                <div class="radio-stack">
-                  <label class="choice"><input type="radio" name="copy_support" value="Si, integral" />S&iacute;, integral</label>
-                  <label class="choice"><input type="radio" name="copy_support" value="Parcial" />Parcial</label>
-                  <label class="choice"><input type="radio" name="copy_support" value="No, lo aporta el cliente" />No, lo aporta el cliente</label>
-                </div>
+              <div class="access-note field--full" role="note" aria-label="Guia para contenidos">
+                <span class="access-note__eyebrow">Qu&eacute; contenido necesitamos</span>
+                <h4>Mandanos lo que ya tengan redactado</h4>
+                <p>
+                  Idealmente incluyan texto de bienvenida para Home, slogan, diferenciales, promos
+                  destacadas, historia de la marca, preguntas frecuentes, datos de contacto y cualquier
+                  texto legal disponible como privacidad, env&iacute;os, cambios, devoluciones o t&eacute;rminos.
+                </p>
+              </div>
+
+              <label class="field field--full">
+                <span>Aclaraciones sobre contenidos</span>
+                <textarea
+                  name="content_notes"
+                  rows="4"
+                  placeholder="Us&aacute; este espacio solo si hay algo importante para aclarar sobre los textos o lo que todav&iacute;a falta definir"
+                ></textarea>
                 <small class="field-error"></small>
-              </fieldset>
+              </label>
             </div>
           </section>
 

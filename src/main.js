@@ -57,33 +57,25 @@ const summarySections = [
     title: "Catalogo",
     items: [
       ["Categorias principales", "main_categories"],
-      ["Cantidad estimada", "sku_count"],
-      ["Catalogo en planilla", "catalog_format"],
+      ["Cantidad aproximada a cargar", "sku_count"],
       ["Drive de catalogo", "catalog_drive_link"],
-      ["Informacion disponible por producto", "catalog_scope"],
+      ["Aclaraciones de catalogo", "catalog_scope"],
       ["Productos prioritarios", "priority_products"],
-      ["Fotos de producto", "product_photos"],
+      ["Drive de fotos de producto", "product_photos"],
     ],
   },
   {
     title: "Imagenes",
     items: [
-      ["Imagenes generales", "general_images"],
       ["Drive de imagenes", "images_drive_link"],
-      ["Banners o promos", "banner_assets"],
-      ["Uso de stock", "stock_image_support"],
+      ["Aclaraciones de imagenes", "banner_assets"],
     ],
   },
   {
     title: "Contenidos",
     items: [
-      ["Contenido de Home", "homepage_content"],
-      ["Contenido de Nosotros", "about_content"],
-      ["FAQ y temas clave", "faq_topics"],
-      ["Datos de contacto", "contact_content"],
-      ["Politicas y legales", "policy_content"],
       ["Drive de contenidos", "content_drive_link"],
-      ["Soporte de copy", "copy_support"],
+      ["Aclaraciones de contenidos", "content_notes"],
     ],
   },
   {
@@ -132,20 +124,14 @@ const validators = {
   ],
   catalogo: [
     ["main_categories", "Especificanos las categorias principales del sitio."],
-    ["sku_count", "Necesitamos una estimacion de productos o SKU."],
-    ["catalog_format", "Indicanos si ya tienen el catalogo en planilla."],
-    ["catalog_scope", "Contanos que informacion tienen disponible por producto."],
-    ["product_photos", "Necesitamos saber con que fotos de producto cuentan."],
+    ["sku_count", "Necesitamos la cantidad aproximada de productos o SKU a cargar."],
+    ["catalog_drive_link", "Compartinos el link al archivo o carpeta del catalogo en Drive."],
   ],
   imagenes: [
-    ["general_images", "Contanos que imagenes generales tienen disponibles."],
-    ["stock_image_support", "Indicanos si podemos complementar con banco de imagenes."],
+    ["images_drive_link", "Compartinos el link a la carpeta de imagenes generales en Drive."],
   ],
   contenidos: [
-    ["homepage_content", "Contanos que contenido tienen para la Home."],
-    ["faq_topics", "Indicanos las preguntas frecuentes o temas clave."],
-    ["contact_content", "Necesitamos los datos de contacto que debe mostrar el sitio."],
-    ["copy_support", "Indicanos si necesitan apoyo con textos y contenidos."],
+    ["content_drive_link", "Compartinos el link a la carpeta o documento de contenidos en Drive."],
   ],
   configuracion: [
     ["payment_methods", "Defini los medios de pago a implementar."],
