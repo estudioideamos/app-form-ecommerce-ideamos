@@ -30,7 +30,6 @@ const summarySections = [
       ["Redes o canales", "social_links"],
       ["Drive principal", "shared_drive_link"],
       ["Resumen del negocio", "business_overview"],
-      ["Restriccion +18", "age_restriction"],
     ],
   },
   {
@@ -105,7 +104,6 @@ const validators = {
     ["contact_phone", "Compartinos un telefono o WhatsApp."],
     ["shared_drive_link", "Compartinos el link principal a la carpeta de Google Drive."],
     ["business_overview", "Contanos brevemente de que trata el negocio."],
-    ["age_restriction", "Indicanos si la tienda necesita restriccion +18."],
   ],
   marca: [
   ],
