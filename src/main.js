@@ -50,7 +50,6 @@ const summarySections = [
     title: "Catalogo",
     items: [
       ["Categorias principales", "main_categories"],
-      ["Cantidad aproximada a cargar", "sku_count"],
       ["Drive de catalogo", "catalog_drive_link"],
       ["Aclaraciones de catalogo", "catalog_scope"],
       ["Productos prioritarios", "priority_products"],
@@ -113,7 +112,6 @@ const validators = {
   ],
   catalogo: [
     ["main_categories", "Especificanos las categorias principales del sitio."],
-    ["sku_count", "Necesitamos la cantidad aproximada de productos o SKU a cargar."],
     ["catalog_drive_link", "Compartinos el link al archivo o carpeta del catalogo en Drive."],
   ],
   imagenes: [
