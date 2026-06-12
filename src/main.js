@@ -77,7 +77,6 @@ const summarySections = [
       ["Medios de pago", "payment_methods"],
       ["Transferencia bancaria", "bank_transfer_setup"],
       ["Metodos de envio", "shipping_methods"],
-      ["Funciones especiales", "special_features"],
     ],
   },
   {
