@@ -77,7 +77,6 @@ const summarySections = [
       ["Medios de pago", "payment_methods"],
       ["Transferencia bancaria", "bank_transfer_setup"],
       ["Metodos de envio", "shipping_methods"],
-      ["Integraciones", "required_integrations"],
       ["Funciones especiales", "special_features"],
     ],
   },
@@ -123,7 +122,6 @@ const validators = {
   configuracion: [
     ["payment_methods", "Defini los medios de pago a implementar."],
     ["shipping_methods", "Contanos como piensan resolver envios o entregas."],
-    ["required_integrations", "Necesitamos conocer las integraciones clave."],
   ],
   tecnico: [
     ["launch_timing", "Contanos la fecha ideal o la prioridad del proyecto."],
