@@ -86,7 +86,6 @@ const summarySections = [
       ["Dominio, hosting y activos", "domains_assets"],
       ["Estado del hosting", "hosting_status"],
       ["Material de marketing", "marketing_assets"],
-      ["Email administrador", "admin_email"],
       ["Vinculacion de Instagram", "instagram_connection"],
       ["Comentarios finales", "final_notes"],
     ],
