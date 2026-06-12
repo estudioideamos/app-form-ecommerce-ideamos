@@ -124,7 +124,7 @@ const validators = {
   ],
   tecnico: [
     ["launch_timing", "Contanos la fecha ideal o la prioridad del proyecto."],
-    ["domains_assets", "Indicanos que dominio, hosting o activos tecnicos ya tienen."],
+    ["domains_assets", "Indicanos que dominio, hosting o activos tecnicos ya tienen. Si no tienen, aclaralo."],
   ],
 };
 
