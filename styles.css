@@ -1052,3 +1052,10 @@ form {
     width: 150px;
   }
 }
+
+/* Center the mobile hero without changing desktop or form layouts. */
+@media (max-width: 767px) {
+  .panel-copy{text-align:center}
+  .panel-copy h1,.panel-copy p{margin-inline:auto}
+
+}
